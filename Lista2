@@ -1,0 +1,223 @@
+//Questão 1 
+package lista2;
+
+import java.util.Scanner;
+
+public class Lista2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num;
+		int num2;
+		double divisao;
+		Scanner n = new Scanner (System.in);
+		Scanner n2 = new Scanner (System.in);
+		System.out.println ("Olá, digite um número");
+		num = n.nextInt();
+		System.out.println ("Agora digite outro númmero");
+		num2 = n2.nextInt();
+		divisao = num/num2;
+				if (divisao == 0) {
+				System.out.println("Os números são divisíveis");
+	          }else  {
+		        System.out.println("Os números não são divisíveis");
+
+	
+
+}
+	}
+
+}
+
+
+//Questão 2 
+package lista2;
+
+import java.util.Scanner;
+
+public class Lista2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double num;
+		double num2;
+		double num3;
+		Scanner n = new Scanner (System.in);
+		Scanner n2 = new Scanner (System.in);
+		Scanner n3 = new Scanner (System.in);
+		System.out.println ("Olá, digite um número");
+		num = n.nextDouble();
+		System.out.println ("Agora digite outro númmero");
+		num2 = n2.nextDouble();
+		System.out.println("Por fim digite o último");
+		num3 = n3.nextDouble();
+	
+		if (num>num2 && num>num3) {
+			System.out.println("O maior número é "+ num);	
+		}
+				if (num2>num && num2>num3) {
+				System.out.println("O maior número é "+ num2);
+				}
+				
+				if (num3>num && num3>num2)  {
+		        System.out.println("O maior número é "+ num3);
+} 
+				if (num<num2 && num<num3) {
+					System.out.println("O menor número é "+ num);	
+				}
+						if (num2<num && num2<num3) {
+						System.out.println("O menor número é "+ num2);
+						}
+						
+						if (num3<num && num3<num2)  {
+				        System.out.println("O menor número é "+ num3);
+
+			
+		}
+	}
+
+}
+
+//Questão 3
+package lista2;
+
+import java.util.Scanner;
+
+public class Lista2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			String a;
+			String b;
+			String c;
+			
+			double valor1;
+			double valor2;
+			double valor3;
+			
+			Scanner opcao = new Scanner (System.in);
+			Scanner v1 = new Scanner (System.in);
+			Scanner v2 = new Scanner (System.in);
+			Scanner v3 = new Scanner (System.in);
+			
+			System.out.println("Olá, qual o produto desejado?");
+			a = opcao.nextLine ();
+			System.out.println("Qual o preço dele?");
+			valor1 = v1.nextDouble();
+			System.out.println("Qual o outro produto desejado?");
+			b = opcao.nextLine ();
+			System.out.println("Qual o preço dele?");
+			valor2 = v2.nextDouble();
+			System.out.println ("Qual o último produto?");
+			c = opcao.nextLine();
+			System.out.println("E o preço dele?");
+			valor3 = v3.nextDouble();
+	
+	if (valor1<valor2 && valor1<valor3) {
+		System.out.println("Você deveria comprar o produto "+ a);
+	  }
+	   if (valor2<valor1 && valor2<valor3) {
+		System.out.println ("Você deveria comprar o produto "+b);
+	   }
+	   if (valor3<valor1 && valor3<valor2) {
+		System.out.println("Você deveria comprar o produto"+c);
+	   }
+		   
+	 }
+}
+
+
+//Questão 4
+package lista2;
+
+import java.util.Scanner;
+
+public class Lista2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double numer1;
+		double numer2;
+		double numer3;
+		Scanner n1 = new Scanner (System.in);
+		Scanner n2 = new Scanner (System.in);
+		Scanner n3 = new Scanner (System.in);
+		System.out.println ("Olá, insira um número");
+		numer1 = n1.nextDouble ();
+		System.out.println("Agora insira mais um");
+		numer2 = n2.nextDouble ();
+		System.out.println("Por fim, um último número");
+		numer3 = n3.nextDouble ();
+		
+		if (numer1>numer2 && numer1>numer3) {
+			System.out.println ("O maior número é "+numer1);
+		}
+		 if (numer2>numer1 && numer2>numer3) {
+			 System.out.println ("O maior número é "+numer2);
+		}
+		 if (numer3>numer1 && numer3>numer2) {
+			 System.out.println("O maior número é "+numer3);
+		 }
+		 
+		 if (numer1>numer2 && numer1<numer3) {
+			 System.out.println("O número intermediário é "+numer1);
+		}
+		 if (numer2>numer1 && numer2<numer3) {
+			 System.out.println("O número intermediário é "+numer2);
+	    }
+		 if (numer3>numer1 && numer3<numer2) {
+			 System.out.println("O número intermediário é "+numer3);
+	     }
+		 if (numer1<numer2 && numer1>numer3) {
+			 System.out.println("O número intermediário é "+numer1);
+		}
+		 if (numer2<numer1 && numer2>numer3) {
+			 System.out.println("O número intermediário é "+numer2);
+	    }
+		 if (numer3<numer1 && numer3>numer2) {
+			 System.out.println("O número intermediário é "+numer3);
+	     }
+		 if (numer1<numer2 && numer1<numer3) {
+			 System.out.println ("O menor número é "+numer1);
+		 }
+		 if (numer2<numer1 && numer2<numer3) {
+			 System.out.println("O menor número é "+numer2);
+	     }
+		 if (numer3<numer1 && numer3<numer2) {
+			 System.out.println("O menor número é "+numer3);
+	 }
+} 
+}
+
+//Questão 5
+package lista2;
+
+import java.util.Scanner;
+
+public class Lista2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int opcao;
+		Scanner op = new Scanner (System.in);
+		
+		System.out.println("Digite o número que corresponde ao seu turno");
+		System.out.println("1- Matutino");
+		System.out.println("2-Vespertino");
+		System.out.println("3-Noturno");
+		opcao = op.nextInt();
+		
+		if (opcao == 1) {
+			System.out.println ("Bom Dia!");
+		}
+		if (opcao == 2) {
+			System.out.println("Boa Tarde!");
+		}
+		if (opcao == 3) {
+			System.out.println ("Boa Noite!");
+		}
+		else 
+			System.out.println("Entrada Inválida");
+		
+	 }
+} 
