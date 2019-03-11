@@ -1,0 +1,13 @@
+-- ATIVIDADE 1-- 
+2ª QUESTÃO
+
+package acrss;
+
+public class Invoice {
+	int NumeroItem;
+	String DescricaoItem;
+	int QtdItem;
+	double PrecoItem;
+
+}
+
